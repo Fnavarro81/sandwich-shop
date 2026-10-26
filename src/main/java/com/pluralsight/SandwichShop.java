@@ -32,14 +32,14 @@ public class SandwichShop {
         }
         // Assigning discount to age
         System.out.println("What is your age?: ");
-        double age = inputScanner.nextDouble();
+        int age = inputScanner.nextInt();
 
         if (age <= 17) {
             trueDiscount = pediatricAgeDiscount;
-            System.out.println("You are receiving a %10 discount on your order!");
+            System.out.println("You are receiving a 10% discount on your order!");
         } else if (age >= 65) {
             trueDiscount = geriatricAgeDiscount;
-            System.out.println("You are receiving a %20 discount on your order!");
+            System.out.println("You are receiving a 20% discount on your order!");
         }
 
         // Total cost displayed
